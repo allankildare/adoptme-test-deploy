@@ -1,0 +1,20 @@
+paths:
+  /api/pets/:
+    get:
+      summary: Obtém todos os pets registrados no banco de dados
+      tags:
+        - Pets
+      responses:
+        "200":
+          description: Os pets foram retornados com sucesso
+        "500":
+          description: Erro interno do servidor, geralmente gerado por uma query mal formatada ou falha de conexão com o banco de dados
+    post:
+      summary: Registra um novo pet ao banco de dados
+      tags:
+        - Pets
+      responses:
+        "200":
+          description: Pet criado com sucesso
+        "500":
+          description: Erro interno do servidor, geralmente gerado por uma query mal formatada ou falha de conexão com o banco de dados
